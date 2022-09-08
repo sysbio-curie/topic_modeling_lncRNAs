@@ -1,0 +1,7 @@
+scipy
+pandas
+scanpy
+seaborn
+numpy
+statsmodels
+cloudpickle
