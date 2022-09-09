@@ -1,4 +1,4 @@
-name: github
+name: malagolietal2022
 channels:
   - conda-forge
   - bioconda
