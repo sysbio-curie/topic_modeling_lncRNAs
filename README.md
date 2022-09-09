@@ -1,6 +1,6 @@
 # Topic modelling for lncRNAs
 Repository of the paper in preparation (Malagoli et al 2022). 
-To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you find the notebooks and the necessary helper files. All the data and the results can be downloaded from our [GDrive](https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing). You need to donwload everything (from GitHub and the link) and put it in a fodler on your laptop.
+To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you find the notebooks and the necessary helper files. All the data and the results can be downloaded from our [GDrive](https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing). You need to download everything (from GitHub and the link) and put files and folders in a folder on your laptop.
 
 # Presentation
 We propose a topic modeling approach to investigate the transcriptional heterogeneity of luminal and triple negative breast cancer cells using patient-derived xenograft models of acquired resistance to chemotherapy and targeted therapy. 
