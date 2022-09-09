@@ -1,6 +1,6 @@
 # nSBM-breast-cancer
-Repository of the paper in preparation (Malagoli et al 2022). 
-To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you find the notebooks and the necessary helper files. All the data and the results can be downloaded from https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing. You need to donwload everything (from GitHub and the link) and put it in a fodler on your laptop.
+Repository of the paper in preparation (Malagoli et al. 2022). 
+To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you will find the notebooks and the necessary helper files. All the data and the results can be downloaded from https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing. You need to download all the material (from GitHub and the link) locally on your machine.
 
 # Presentation
 We propose a topic modeling approach to investigate the transcriptional heterogeneity of luminal and triple negative breast cancer cells using patient-derived xenograft models of acquired resistance to chemotherapy and targeted therapy. 
