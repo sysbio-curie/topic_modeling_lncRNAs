@@ -1,6 +1,6 @@
 # nSBM-breast-cancer
 Repository of the paper in preparation (Malagoli et al 2022). 
-To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you find the notebooks and the necessary helper files. All the data and the results can be downloaded from https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing. You need to donwload everything (from GitHub and the link) and put it in a fodler on your laptop.
+To reproduce our experiments you need to create a Anaconda environment following the below instructions. In this GitHub you find the notebooks and the necessary helper files. All the data and the results can be downloaded from our [GDrive](https://drive.google.com/drive/folders/1Tdwt9Z85ru6r1yrDnA7WyhBg8e3WNHdW?usp=sharing). You need to donwload everything (from GitHub and the link) and put it in a fodler on your laptop.
 
 # Presentation
 We propose a topic modeling approach to investigate the transcriptional heterogeneity of luminal and triple negative breast cancer cells using patient-derived xenograft models of acquired resistance to chemotherapy and targeted therapy. 
@@ -10,29 +10,39 @@ We show that using an integrative clustering that combines the information comin
 
 ## HOWTO create the appropriate enviroment to reproduce our experiments
 
-### 1)Install graph-tool as new conda environment https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions
+### 1) Install graph-tool as new conda environment https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions
 
-``` conda create --name ENV_NAME -c conda-forge graph-tool ```
+```
+conda create --name ENV_NAME -c conda-forge graph-tool
+```
 
 
-### 2)Activate the env
+### 2) Activate the env
 
+```
 conda activate ENV_NAME
+```
 
 
-### 3)Install additional packages
+### 3) Install additional packages
 
+```
 conda install -n ENV_NAME -c conda-forge ipython jupyter
+```
 
 
-### 4)Install nSBM https://github.com/BioPhys-Turin/nsbm
+### 4) Install nSBM https://github.com/BioPhys-Turin/nsbm
 
+```
 conda install -c conda-forge nsbm
+```
 
 
-### 5)Install the requirements file
+### 5) Install the requirements file
 
+```
 pip install -r requirements.txt
+```
 
 
 --------------------------------------------------
@@ -40,11 +50,15 @@ pip install -r requirements.txt
 
 ### You can simply create an enviroment using th .yml file you can find in this Github using the command line
 
+```
 conda env create -f /PATH_TO_THE_FILE/malagoli_et_al_2022.yml -n ENV_NAME
+```
 
 ### The activate the environmente 
 
+```
 conda activate ENV_NAME
+```
 
 # References
 
@@ -69,4 +83,4 @@ Grosselin, K., Durand, A., Marsolier, J. et al. High-throughput single-cell ChIP
 
 
 # License
-See https://github.com/gmalagol10/nSBM-breast-cancer/blob/main/LICENSE
+See [LICENSE](https://github.com/gmalagol10/nSBM-breast-cancer/blob/main/LICENSE)
