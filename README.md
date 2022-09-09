@@ -12,7 +12,7 @@ We show that using an integrative clustering that combines the information comin
 
 ### 1)Install graph-tool as new conda environment https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions
 
-conda create --name ENV_NAME -c conda-forge graph-tool
+``` conda create --name ENV_NAME -c conda-forge graph-tool ```
 
 
 ### 2)Activate the env
