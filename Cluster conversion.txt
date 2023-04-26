@@ -1,0 +1,46 @@
+trisbm-mRNA-lncRNA
+cluster 0 --> cluster 4
+cluster 1 --> cluster 6
+cluster 2 --> cluster 3
+cluster 3 --> cluster 2
+cluster 4 --> cluster 1
+cluster 5 --> cluster 0
+
+-----------------------
+
+hSBM-mRNA-lncRNA
+cluster 0 --> cluster 10
+cluster 1 --> cluster 5
+cluster 2 --> cluster 3
+cluster 3 --> cluster 7
+cluster 4 --> cluster 1
+cluster 5 --> cluster 0
+cluster 6 --> cluster 4
+cluster 7 --> cluster 9
+cluster 8 --> cluster 2
+cluster 9 --> cluster 6
+cluster 10 --> cluster 8 
+
+-----------------------
+
+hSBM-mRNA
+cluster 0 --> cluster 8
+cluster 1 --> cluster 5
+cluster 2 --> cluster 1
+cluster 3 --> cluster 6
+cluster 4 --> cluster 2
+cluster 5 --> cluster 3
+cluster 6 --> cluster 7
+cluster 7 --> cluster 0
+cluster 8 --> cluster 4
+
+-----------------------
+
+hSBM-lncRNA
+cluster 0 --> cluster 5
+cluster 1 --> cluster 2
+cluster 2 --> cluster 6
+cluster 3 --> cluster 4
+cluster 4 --> cluster 0
+cluster 5 --> cluster 1
+cluster 6 --> cluster 3

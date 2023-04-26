@@ -721,23 +721,23 @@ class sbmtm():
 
 #----------------------- MY FUNCTIONS -------------------------------
         
-    def cluster_to_dict(self, l, df):
+    def cluster_to_dict(self, l):
         a=self.get_groups(l=l)["p_td_d"]
-        a=pd.DataFrame(data=a).dropna(axis=1).to_numpy().astype(int)
-        print(a.shape)
-        clusters=pd.DataFrame(index=df.columns)
+        b=pd.DataFrame(data=a).dropna(axis=1).to_numpy().astype(int)
+        print("(clusters, samples):",b.shape)
+        clusters=pd.DataFrame(index=self.documents)
         clusters["clu"]="--"
-        for i in range(a.T.shape[0]):
-            clusters.clu.iloc[i]=np.argmax(a.T[i])
+        for i in range(b.T.shape[0]):
+            clusters.clu.iloc[i]=np.argmax(b.T[i])
         diz_clu={}
-        for clu in range(a.shape[0]):
+        for clu in range(b.shape[0]):
             names=clusters[clusters["clu"]==clu]["clu"].index
             probs=[1 for i in range(len(clusters[clusters["clu"]==clu]))]
             diz_clu[str(clu)]=[list(x) for x in zip(names,probs)] 
         return diz_clu
        
 		
-    def save_levels(self,df,dataset):
+    def save_levels(self,dataset):
 
         self.save_graph(filename=f"{dataset}-graph.xml.gz")
 
@@ -753,19 +753,18 @@ class sbmtm():
             #P(gene|topic)
             filename=f"{dataset}-topics-level-{l}.txt"
             with open(filename,"w") as convert_file:
-                convert_file.write(json.dumps(self.topics(l=l,n=len(df.index))))
+                convert_file.write(json.dumps(self.topics(l=l,n=len(self.words))))
 
             #P(sample|cluster)
             filename=f"{dataset}-cluster-level-{l}.txt"
             with open(filename,"w") as convert_file:
-                    convert_file.write(json.dumps(self.cluster_to_dict(l, df)))
+                    convert_file.write(json.dumps(self.cluster_to_dict(l)))
 
             #P(topic|sample)
             a=self.get_groups(l=l)["p_tw_d"]
-            a=pd.DataFrame(data=a).dropna(axis=1).to_numpy()
-            print(a.shape)
-            topic_dist=pd.DataFrame(data=a.T,index=df.columns)
+            print("(topics, samples):",a.shape)
+            topic_dist=pd.DataFrame(data=a.T,index=self.documents)
             topic_dist.to_csv(f"{dataset}-topsbm_level_{l}_topic_dist.csv")
-            print(f"------End level {l}------",strftime("%Y-%m-%d %H:%M:%S", localtime())) 
+            print(f"------End level {l}------", strftime("%Y-%m-%d %H:%M:%S", localtime()), "\n") 
 
 

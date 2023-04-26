@@ -364,7 +364,7 @@ def topics_names(topics, enr_test_outcome, database):
                         break
                     #Option 2: new name belongs to another topic --> check the -log10(fdr)
                     else:
-                        f1=topic_name[topic_name[1]==nuovo][0].item()
+                        f1=topic_name[topic_name[1]==nuovo][0].max()
                         f2=b.loc[nuovo].fdr
                         if f1>=f2: 
                             continue
